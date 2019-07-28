@@ -1,0 +1,1 @@
+Note: enable Server Side Snclusion (SSI) on nginx to allow code sharing in HTML

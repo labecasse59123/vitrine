@@ -1,0 +1,22 @@
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/circle-progress.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+	$(function() {
+		const pathname = window.location.pathname.substring(1) || "index.html";
+		const mapping = {
+			"index.html": "index",
+			"gallery.html": "gallery",
+			"blog.html": "blog",
+		};
+		console.log(mapping[pathname]);
+		if (mapping[pathname]) {
+			$(`#${mapping[pathname]}`).addClass('active').siblings().removeClass('active');
+		}
+	});
+</script>
